@@ -2,7 +2,8 @@
   <div id="wrapper">
     <div 
     id="gn" 
-    class="clearfix">
+    class="clearfix"
+    >
       <div 
       id="gnHome" 
       class="clearfix"
@@ -81,10 +82,10 @@ export default {
   methods: {
     resizeWindow () {
       const elGnWrapper = this.$refs.gnWrapper
-      const elGnHome = this.$refs.gnHome
+      // const elGnHome = this.$refs.gnHome
       this.gnCoverWidth = String(window.innerWidth) + 'px'
       this.gnCoverHeight = String(elGnWrapper.clientHeight) + 'px'
-      this.gnWrapperTop = elGnHome.clientHeight
+      // this.gnWrapperTop = elGnHome.clientHeight
     },
     switchMenu () {
       if(this.showMenu) {
@@ -109,6 +110,15 @@ ul{
   padding-inline-start:0;
   margin: 0;
 }
+
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 #wrapper {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -128,7 +138,7 @@ ul{
 }
 #gnWrapper{
   position: relative;
-  /* top: 70px; */
+  top: 70px;
   left: 0;
 }
 
@@ -162,6 +172,7 @@ ul{
   width: 100%;
   background-color: white;
   z-index: 10000;
+  animation: show 2s linear 0s;
 }
 #gnHome{
   position: relative;
