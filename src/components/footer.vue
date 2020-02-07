@@ -22,6 +22,14 @@
 </template>
 
 <style scoped>
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 @charset "utf-8";
 *, *:before, *:after {
   -moz-box-sizing: content-box;
@@ -40,6 +48,7 @@
   margin: 150px 0 0 0;
   padding: 30px 30px 10px 30px;
   background-color: black;
+  animation: show 2s linear 0s;
 }
 #stSns{
   display: block;
