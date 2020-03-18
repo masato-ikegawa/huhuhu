@@ -14,15 +14,18 @@
     <img src="../assets/favicon.jpg">
     </div>
     <border />
+    <moreswipe />
   </div>
 </template>
 
 <script>
 import Border from './border.vue'
+import Moreswipe from './moreswipe.vue'
 export default {
   name: 'HelloWorld',
   components: {
-    Border
+    Border,
+    Moreswipe
   },
   data () {
     return {
@@ -32,8 +35,8 @@ export default {
   },
   mounted () {
     this.startLoading()
-    // setTimeout(this.stopLoading, 13000);
-    setTimeout(this.stopLoading, 130);
+    setTimeout(this.stopLoading, 13000);
+    // setTimeout(this.stopLoading, 130);
   },
   methods: {
     startLoading () {
