@@ -13,12 +13,17 @@
     </p>
     <img src="../assets/favicon.jpg">
     </div>
+    <border />
   </div>
 </template>
 
 <script>
+import Border from './border.vue'
 export default {
   name: 'HelloWorld',
+  components: {
+    Border
+  },
   data () {
     return {
       msg: 'HELLO FUFUFU',
@@ -27,7 +32,8 @@ export default {
   },
   mounted () {
     this.startLoading()
-    setTimeout(this.stopLoading, 13000);
+    // setTimeout(this.stopLoading, 13000);
+    setTimeout(this.stopLoading, 130);
   },
   methods: {
     startLoading () {
@@ -132,6 +138,7 @@ a {
   animation: show 4s linear 0s;
 }
 .message img{
-  width: 100%
+  width: 100%;
+  margin-bottom: 600px;
 }
 </style>
