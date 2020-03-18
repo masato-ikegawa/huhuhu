@@ -22,7 +22,15 @@ npm run lint
 
 ### docker
 ```
+docker-compose up -d
+```
+
+```
 docker exec -it huhuhu-app sh
+```
+
+```
+docker-compose stop
 ```
 
 ### Customize configuration
