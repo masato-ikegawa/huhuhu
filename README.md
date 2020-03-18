@@ -20,5 +20,10 @@ npm run build
 npm run lint
 ```
 
+### docker
+```
+docker exec -it huhuhu-app sh
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
