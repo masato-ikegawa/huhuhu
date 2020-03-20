@@ -8,13 +8,37 @@
     <div
     class="message"
     v-show="!loading">
-    <p>
-      This site was created to make people around the world 'ほっこり'
-    </p>
-    <img src="../assets/favicon.jpg">
+      <p>
+        This site was created to make people around the world 'ほっこり'
+      </p>
     </div>
-    <border />
-    <moreswipe />
+    <ul v-show="!loading">
+      <border v-show="!loading" />
+      <li>
+        <img
+          src="../assets/favicon.jpg"
+          class="top_ul-li-img">
+      </li>
+      <border v-show="!loading" />
+      <li>
+        <img
+          src="../assets/favicon.jpg"
+          class="top_ul-li-img">
+      </li>
+      <border v-show="!loading" />
+      <li>
+        <img
+          src="../assets/favicon.jpg"
+          class="top_ul-li-img">
+      </li>
+      <border v-show="!loading" />
+      <li>
+        <img
+          src="../assets/favicon.jpg"
+          class="top_ul-li-img">
+      </li>
+    </ul>
+    <moreswipe v-show="!loading" />
   </div>
 </template>
 
@@ -140,8 +164,7 @@ a {
 .message{
   animation: show 4s linear 0s;
 }
-.message img{
+.top_ul-li-img{
   width: 100%;
-  margin-bottom: 600px;
 }
 </style>

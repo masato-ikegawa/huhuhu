@@ -104,7 +104,8 @@ export default {
 
 <style>
 body{
-  margin: 0
+  margin: 0;
+  margin-top: -4.5%;
 }
 ul{
   padding-inline-start:0;
