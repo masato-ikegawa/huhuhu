@@ -2,6 +2,7 @@
 node_modules
 /dist
 pdf
+/src/assets/
 
 # local env files
 .env.local

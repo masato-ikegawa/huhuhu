@@ -14,6 +14,7 @@
     </div>
     <ul v-show="!loading">
       <border v-show="!loading" />
+      <numfirst v-show="!loading" />
       <li>
         <img
           src="../assets/favicon.jpg"
@@ -44,11 +45,13 @@
 
 <script>
 import Border from './border.vue'
+import Numfirst from './num/first.vue'
 import Moreswipe from './moreswipe.vue'
 export default {
   name: 'HelloWorld',
   components: {
     Border,
+    Numfirst,
     Moreswipe
   },
   data () {
