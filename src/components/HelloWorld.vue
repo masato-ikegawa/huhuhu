@@ -17,25 +17,28 @@
       <numfirst v-show="!loading" />
       <li>
         <img
-          src="../assets/favicon.jpg"
+          src="../assets/4index/oya_home.jpg"
           class="top_ul-li-img">
       </li>
       <border v-show="!loading" />
+      <numsecond v-show="!loading" />
       <li>
         <img
-          src="../assets/favicon.jpg"
+          src="../assets/4index/oya_iki.jpg"
           class="top_ul-li-img">
       </li>
       <border v-show="!loading" />
+      <numthird v-show="!loading" />
       <li>
         <img
-          src="../assets/favicon.jpg"
+          src="../assets/4index/oya_arima.jpg"
           class="top_ul-li-img">
       </li>
       <border v-show="!loading" />
+      <numfour v-show="!loading" />
       <li>
         <img
-          src="../assets/favicon.jpg"
+          src="../assets/4index/oya_kaeri.jpg"
           class="top_ul-li-img">
       </li>
     </ul>
@@ -46,12 +49,18 @@
 <script>
 import Border from './border.vue'
 import Numfirst from './num/first.vue'
+import Numsecond from './num/second.vue'
+import Numthird from './num/third.vue'
+import Numfour from './num/four.vue'
 import Moreswipe from './moreswipe.vue'
 export default {
   name: 'HelloWorld',
   components: {
     Border,
     Numfirst,
+    Numsecond,
+    Numthird,
+    Numfour,
     Moreswipe
   },
   data () {

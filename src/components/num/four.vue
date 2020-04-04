@@ -3,21 +3,21 @@
     <div 
     class="num-main">
       <div class="num-index">
-          <img src="../../assets/slice/number_01.svg" alt="">
+          <img src="../../assets/slice/number_04.svg" alt="">
       </div>
       <div class="num-time">
-          10:40
+          17:50
       </div>
     </div>
     <div class="num-title">
-        #おはよう
+        #帰るぜ
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'numfirst',
+  name: 'numfour',
   data () {
     return {
     }

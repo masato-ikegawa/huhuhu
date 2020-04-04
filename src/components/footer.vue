@@ -86,7 +86,7 @@
 #stAbout li a img{
   width: 110px;
 }
-@media screen and (min-width:640px){
+/* @media screen and (min-width:640px){
     #stFooter{
     margin: 150px 0 0 0;
     padding: 20px 0;
@@ -145,5 +145,5 @@
   #stTwitter,#stFacebook{
     margin-right: 30px;
   }
-}
+} */
 </style>

@@ -3,21 +3,21 @@
     <div 
     class="num-main">
       <div class="num-index">
-          <img src="../../assets/slice/number_01.svg" alt="">
+          <img src="../../assets/slice/number_02.svg" alt="">
       </div>
       <div class="num-time">
-          10:40
+          12:00
       </div>
     </div>
     <div class="num-title">
-        #おはよう
+        #行き電車
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'numfirst',
+  name: 'numsecond',
   data () {
     return {
     }
@@ -32,10 +32,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .num {
-    width: 80%;
-    text-align: left;
     position: absolute;
     left: 20px;
+    width: 80%;
+    text-align: left;
 }
 .num-main {
     height: 100%;
