@@ -13,36 +13,39 @@
       </p>
     </div>
     <ul v-show="!loading">
-      <border v-show="!loading" />
-      <numfirst v-show="!loading" />
-      <li>
+      <li class="top_ul-li">
+        <border v-show="!loading" />
+        <numfirst v-show="!loading" />
+        <moreswipe v-show="!loading" />
         <img
           src="../assets/4index/oya_home.jpg"
           class="top_ul-li-img">
       </li>
-      <border v-show="!loading" />
-      <numsecond v-show="!loading" />
-      <li>
+      <li class="top_ul-li">
+        <border v-show="!loading" />
+        <numsecond v-show="!loading" />
+        <moreswipe v-show="!loading" />
         <img
           src="../assets/4index/oya_iki.jpg"
           class="top_ul-li-img">
       </li>
-      <border v-show="!loading" />
-      <numthird v-show="!loading" />
-      <li>
+      <li class="top_ul-li">
+        <border v-show="!loading" />
+        <numthird v-show="!loading" />
+        <moreswipe v-show="!loading" />
         <img
           src="../assets/4index/oya_arima.jpg"
           class="top_ul-li-img">
       </li>
-      <border v-show="!loading" />
-      <numfour v-show="!loading" />
-      <li>
+      <li class="top_ul-li">
+        <border v-show="!loading" />
+        <numfour v-show="!loading" />
+        <moreswipe v-show="!loading" />
         <img
           src="../assets/4index/oya_kaeri.jpg"
           class="top_ul-li-img">
       </li>
     </ul>
-    <moreswipe v-show="!loading" />
   </div>
 </template>
 
@@ -102,7 +105,6 @@ ul {
   padding: 0;
 }
 li {
-  display: inline-block;
   margin: 0 10px;
 }
 a {
@@ -175,6 +177,9 @@ a {
 }
 .message{
   animation: show 4s linear 0s;
+}
+.top_ul-li{
+  position: relative;
 }
 .top_ul-li-img{
   width: 100%;
