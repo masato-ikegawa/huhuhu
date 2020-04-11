@@ -49,7 +49,7 @@
     id="gnWrapper" 
     class="clearfix"
     ref="gnWrapper"
-    v-bind:style="{top:gnWrapperTop}">
+    >
       <router-view/>
     </div>
     <Footer/>
@@ -85,7 +85,6 @@ export default {
       // const elGnHome = this.$refs.gnHome
       this.gnCoverWidth = String(window.innerWidth) + 'px'
       this.gnCoverHeight = String(elGnWrapper.clientHeight) + 'px'
-      // this.gnWrapperTop = elGnHome.clientHeight
     },
     switchMenu () {
       if(this.showMenu) {
@@ -104,7 +103,8 @@ export default {
 
 <style>
 body{
-  margin: 0
+  margin: 0;
+  margin-top: -4.5%;
 }
 ul{
   padding-inline-start:0;
@@ -120,11 +120,13 @@ ul{
     }
 }
 #wrapper {
+  margin: auto;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 375px;
 }
 #gnCover{
   background-color: white;
@@ -168,8 +170,9 @@ ul{
 }
 /* gn */
 #gn{
+  top: 0%;
   position: fixed;
-  width: 100%;
+  width: 375px;
   background-color: white;
   z-index: 10000;
   animation: show 2s linear 0s;
@@ -284,6 +287,23 @@ ul{
 }
 
 @media screen and (min-width:640px){
+  #gnWrapper{
+  position: relative;
+  top: 90px;
+  left: 0;
+  }
+}
+
+@media screen and (min-width:961px){
+  #gnWrapper{
+  position: relative;
+  top: 120px;
+  left: 0;
+  }
+}
+
+
+/* @media screen and (min-width:640px){
     #gn>ul{
     margin: 0 5%;
   }
@@ -359,6 +379,6 @@ ul{
   #gn>ul>li:first-child{
     background-color: white;
   }
-}
+} */
 
 </style>

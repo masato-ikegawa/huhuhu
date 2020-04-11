@@ -8,23 +8,62 @@
     <div
     class="message"
     v-show="!loading">
-    <p>
-      This site was created to make people around the world 'ほっこり'
-    </p>
-    <img src="../assets/favicon.jpg">
+      <p>
+        This site was created to make people around the world 'ほっこり'
+      </p>
     </div>
-    <border />
-    <moreswipe />
+    <ul v-show="!loading">
+      <li class="top_ul-li">
+        <border v-show="!loading" />
+        <numfirst v-show="!loading" />
+        <moreswipe v-show="!loading" />
+        <img
+          src="../assets/4index/oya_home.jpg"
+          class="top_ul-li-img">
+      </li>
+      <li class="top_ul-li">
+        <border v-show="!loading" />
+        <numsecond v-show="!loading" />
+        <moreswipe v-show="!loading" />
+        <img
+          src="../assets/4index/oya_iki.jpg"
+          class="top_ul-li-img">
+      </li>
+      <li class="top_ul-li">
+        <border v-show="!loading" />
+        <numthird v-show="!loading" />
+        <moreswipe v-show="!loading" />
+        <img
+          src="../assets/4index/oya_arima.jpg"
+          class="top_ul-li-img">
+      </li>
+      <li class="top_ul-li">
+        <border v-show="!loading" />
+        <numfour v-show="!loading" />
+        <moreswipe v-show="!loading" />
+        <img
+          src="../assets/4index/oya_kaeri.jpg"
+          class="top_ul-li-img">
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 import Border from './border.vue'
+import Numfirst from './num/first.vue'
+import Numsecond from './num/second.vue'
+import Numthird from './num/third.vue'
+import Numfour from './num/four.vue'
 import Moreswipe from './moreswipe.vue'
 export default {
   name: 'HelloWorld',
   components: {
     Border,
+    Numfirst,
+    Numsecond,
+    Numthird,
+    Numfour,
     Moreswipe
   },
   data () {
@@ -66,7 +105,6 @@ ul {
   padding: 0;
 }
 li {
-  display: inline-block;
   margin: 0 10px;
 }
 a {
@@ -140,8 +178,10 @@ a {
 .message{
   animation: show 4s linear 0s;
 }
-.message img{
+.top_ul-li{
+  position: relative;
+}
+.top_ul-li-img{
   width: 100%;
-  margin-bottom: 600px;
 }
 </style>

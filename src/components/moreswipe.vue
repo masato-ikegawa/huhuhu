@@ -31,11 +31,18 @@ export default {
     50% { transform:translateY(10px); }
     100% { transform:translateY(  0px); }
 }
+.moreswipe{
+  position: absolute;
+  right: 3px;
+  bottom: 25px;
+}
 .moreswipe-item {
     text-align: left;
     width: 73px;
     animation: bound 3s infinite ;
-    background-color: black;
     color: white;
+}
+.moreswipe-item span{
+  text-decoration: underline;
 }
 </style>

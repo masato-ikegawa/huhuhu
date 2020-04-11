@@ -40,21 +40,34 @@ export default {
 @keyframes extend{
     from{
         height: 0px;
+        opacity: 0;
     }
     to{
-        height: 200px;
+        height: 235px;
+        opacity: 1;
+    }
+}
+
+@keyframes changeOpa{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
 
 /* todo: position absoluteなど必要 */
 .border-item {
     display:none;
-    animation: extend 5s ;
+    animation: extend 3s ;
     background-color: black;
     width:0.5vw;
+    position: absolute;
+    left: 14px;
 }
 .active {
     display: block;
-    height: 200px;
+    height: 235px;
 }
 </style>
