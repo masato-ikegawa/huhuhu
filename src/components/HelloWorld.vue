@@ -13,15 +13,24 @@
       </p>
     </div>
     <ul v-show="!loading">
-      <li class="top_ul-li">
+      <li
+      class="top_ul-li"
+      v-touch:start="Taphandler"
+      v-touch:end="holdEnd"
+      v-touch:swipe.left=swipeHandler_1>
         <border v-show="!loading" />
         <numfirst v-show="!loading" />
         <moreswipe v-show="!loading" />
         <img
           src="../assets/4index/oya_home.jpg"
-          class="top_ul-li-img">
+          class="top_ul-li-img"
+          id="first">
       </li>
-      <li class="top_ul-li">
+      <li
+      class="top_ul-li"
+      v-touch:start="Taphandler"
+      v-touch:end="holdEnd"
+      v-touch:swipe.left="swipeHandler_2">
         <border v-show="!loading" />
         <numsecond v-show="!loading" />
         <moreswipe v-show="!loading" />
@@ -29,7 +38,11 @@
           src="../assets/4index/oya_iki.jpg"
           class="top_ul-li-img">
       </li>
-      <li class="top_ul-li">
+      <li
+      class="top_ul-li"
+      v-touch:start="Taphandler"
+      v-touch:end="holdEnd"
+      v-touch:swipe.left="swipeHandler_3">
         <border v-show="!loading" />
         <numthird v-show="!loading" />
         <moreswipe v-show="!loading" />
@@ -37,7 +50,11 @@
           src="../assets/4index/oya_arima.jpg"
           class="top_ul-li-img">
       </li>
-      <li class="top_ul-li">
+      <li
+      class="top_ul-li"
+      v-touch:start="Taphandler"
+      v-touch:end="holdEnd"
+      v-touch:swipe.left="swipeHandler_4">
         <border v-show="!loading" />
         <numfour v-show="!loading" />
         <moreswipe v-show="!loading" />
@@ -74,8 +91,8 @@ export default {
   },
   mounted () {
     this.startLoading()
-    setTimeout(this.stopLoading, 13000);
-    // setTimeout(this.stopLoading, 130);
+    // setTimeout(this.stopLoading, 13000);
+    setTimeout(this.stopLoading, 130);
   },
   methods: {
     startLoading () {
@@ -90,6 +107,31 @@ export default {
       elGn.style.display = 'block'
       elFooter.style.display = 'block'
       this.loading = false
+    },
+    // 引数を渡せない、swipeのdirectionと衝突してしまう
+    swipeHandler_1 () {
+      let nextPageUrl = 'content-1'
+      setTimeout(this.$router.push({name: nextPageUrl}), 130000);
+    },
+    swipeHandler_2 () {
+      let nextPageUrl = 'content-2'
+      this.$router.push({name: nextPageUrl})
+    },
+    swipeHandler_3 () {
+      let nextPageUrl = 'content-3'
+      this.$router.push({name: nextPageUrl})
+    },
+    swipeHandler_4 () {
+      let nextPageUrl = 'content-4'
+      this.$router.push({name: nextPageUrl})
+    },
+    Taphandler (e) {
+      let obj = e.target
+      obj.classList.add("active")
+    },
+    holdEnd (e) {
+      let obj = e.target
+      obj.classList.remove("active");
     }
   }
 }
@@ -159,6 +201,17 @@ a {
     border-color: transparent;
   }
 }
+
+@keyframes swipe-opacity {
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0.7;
+        transform: translateX(-200px);
+    }
+}
 .ld-anime{
   height: 100%;
   color: black;
@@ -183,5 +236,11 @@ a {
 }
 .top_ul-li-img{
   width: 100%;
+}
+.top_ul-li-img.active{
+  animation: swipe-opacity 1.5s ease;
+}
+.top_ul-li-img.ha{
+  animation: ha 1s ease;
 }
 </style>
