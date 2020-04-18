@@ -21,11 +21,7 @@ export default {
         let top = el.getBoundingClientRect().top
         let height = window.screen.height
         let y = window.scrollY
-        console.log(height)
-        console.log(y + top)
-        console.log(height/9 < y + top)
         if (height/9 < y + top) {
-            console.log('sss')
             el.classList.add('active');
       }
       return window.scrollY > 100
