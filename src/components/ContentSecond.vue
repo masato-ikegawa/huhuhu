@@ -1,23 +1,50 @@
 <template>
-  <div class="content-first">
-    <div
-    class="message"
-    v-show="!loading">
-      <p>
-        This site was created to make people around the world 'ほっこり'
-      </p>
+  <div class="content-second">
+    <div class="top-title">
+      <numsecond4content />
+      <img
+      src="../assets/4index/oya_iki.jpg"
+      class="top-title__img"
+      >
+      <p class="top-title__tag"># いき電車</p>
     </div>
+    <secondbox />
+    <thirdbox />
+    <fourthbox />
+    <fifthbox />
+    <sixthbox />
+    <seventhbox />
+    <eighthbox />
+    <footerlink />
   </div>
 </template>
 
 <script>
+import numsecond4content from './contents/numsecond4content.vue'
+import Secondbox from './contents/second/Second.vue'
+import Thirdbox from './contents/second/Third.vue'
+import Fourthbox from './contents/second/Fourth.vue'
+import Fifthbox from './contents/second/Fifth.vue'
+import Sixthbox from './contents/second/Sixth.vue'
+import Seventhbox from './contents/second/Seventh.vue'
+import Eighthbox from './contents/second/Eighth.vue'
+import Footerlink from './contents/FooterLink.vue'
+
 export default {
-  name: 'ContentFirst',
+  name: 'ContentSecond',
   components: {
+    numsecond4content,
+    Secondbox,
+    Thirdbox,
+    Fourthbox,
+    Fifthbox,
+    Sixthbox,
+    Seventhbox,
+    Eighthbox,
+    Footerlink
   },
   data () {
     return {
-      msg: 'HELLO FUFUFU',
       loading: true
     }
   },
@@ -42,6 +69,20 @@ li {
 }
 a {
   color: #42b983;
+}
+.top-title {
+  position: relative;
+}
+.top-title__img {
+  width: 100%;
+}
+.top-title__tag {
+  bottom: 2%;
+  font-weight: bold;
+  font-size: 18px;
+  right: 6%;
+  color: white;
+  position: absolute;
 }
 
 </style>

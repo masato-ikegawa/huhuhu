@@ -1,12 +1,5 @@
 <template>
   <div class="content-first">
-    <div
-    class="message"
-    >
-      <p>
-        This site was created to make people around the world 'ほっこり'
-      </p>
-    </div>
     <div class="top-title">
       <numfirst4content />
       <img
@@ -37,7 +30,7 @@ import Sixthbox from './contents/first/Sixth.vue'
 import Seventhbox from './contents/first/Seventh.vue'
 import Eighthbox from './contents/first/Eighth.vue'
 import Ninethbox from './contents/first/Nineth.vue'
-import Footerlink from './contents/first/FooterLink.vue'
+import Footerlink from './contents/FooterLink.vue'
 
 export default {
   name: 'ContentFirst',
@@ -55,7 +48,6 @@ export default {
   },
   data () {
     return {
-      msg: 'HELLO FUFUFU',
       loading: true
     }
   },
