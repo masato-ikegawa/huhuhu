@@ -70,7 +70,7 @@ export default {
       srcMenuImage: 'https://weebee1212.com/common/images/sp/menu.png',
       gnCoverWidth: '100%',
       gnCoverHeight: '100%',
-      gnWrapperTop: '70px',
+      gnWrapperTop: '77px',
       status: 'none',
       showGnCover: false,
       showMenu: false
@@ -140,7 +140,7 @@ ul{
 }
 #gnWrapper{
   position: relative;
-  top: 70px;
+  top: 77px;
   left: 0;
 }
 
@@ -279,11 +279,6 @@ ul{
 #gn>ul>li:nth-child(9) .hover{
   -webkit-tap-highlight-color: #56CBC2;
   background-color: #56CBC2;
-}
-#gnWrapper{
-  position: relative;
-  top: 70px;
-  left: 0;
 }
 
 @media screen and (min-width:640px){

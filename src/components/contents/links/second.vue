@@ -1,7 +1,7 @@
 <template>
   <li class="link-second">
       <img 
-      src="../../../../assets/slice/picutre_iki.png"
+      src="../../../assets/slice/picutre_iki.png"
       class="link-second__img"
       >
       <span class="link-second__tag"># 行き電車</span>

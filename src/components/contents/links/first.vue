@@ -1,17 +1,17 @@
 <template>
-  <li class="link-fourth">
+  <li class="link-first">
       <img 
-      src="../../../../assets/slice/picutre_kaeri.png"
-      class="link-fourth__img"
+      src="../../../assets/slice/picutre_home.png"
+      class="link-first__img"
       >
-      <span class="link-fourth__tag"># みてい？</span>
+      <span class="link-first__tag"># おはよう</span>
   </li>
 </template>
 
 <script>
 
 export default {
-  name: 'FourthLink',
+  name: 'FirstLink',
   components: {
   },
   data () {
@@ -27,14 +27,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.link-fourth {
+.link-first {
   width: 22%;
   display: inline-block;
+  margin-right: 5px;
 }
-.link-fourth__img {
+.link-first__img {
   width: 95%;
 }
-.link-fourth__tag {
+.link-first__tag {
   font-size: 14px;
 }
 </style>
