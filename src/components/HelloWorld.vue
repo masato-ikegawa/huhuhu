@@ -5,13 +5,7 @@
     v-show="loading">
       <p class="loading-msg">huhuhu?</p>
     </div>
-    <div
-    class="message"
-    v-show="!loading">
-      <p>
-        This site was created to make people around the world 'ほっこり'
-      </p>
-    </div>
+    <margin v-show="!loading" />
     <ul v-show="!loading">
       <li
       class="top_ul-li"
@@ -67,6 +61,7 @@
 </template>
 
 <script>
+import Margin from './Margin.vue'
 import Border from './border.vue'
 import Numfirst from './num/first.vue'
 import Numsecond from './num/second.vue'
@@ -76,6 +71,7 @@ import Moreswipe from './moreswipe.vue'
 export default {
   name: 'HelloWorld',
   components: {
+    Margin,
     Border,
     Numfirst,
     Numsecond,
@@ -212,6 +208,9 @@ a {
         transform: translateX(-200px);
     }
 }
+.margin {
+  height: 30px;
+}
 .ld-anime{
   height: 100%;
   color: black;
@@ -228,9 +227,6 @@ a {
     overflow: hidden;
   animation: typing 10s steps(7, end), cursor 1.4s step-end infinite;
 }
-.message{
-  animation: show 4s linear 0s;
-}
 .top_ul-li{
   position: relative;
 }
@@ -242,5 +238,10 @@ a {
 }
 .top_ul-li-img.ha{
   animation: ha 1s ease;
+}
+@media screen and (min-width: 1441px){
+  .margin{
+    height: 70px;
+  }
 }
 </style>
