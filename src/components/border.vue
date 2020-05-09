@@ -58,7 +58,7 @@ export default {
     display:none;
     animation: extend 3s ;
     background-color: black;
-    width:0.5vw;
+    width: 1.0px;
     position: absolute;
     left: 14px;
 }

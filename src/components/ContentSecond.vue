@@ -1,5 +1,6 @@
 <template>
   <div class="content-second">
+    <margin />
     <div class="top-title">
       <numsecond4content />
       <img
@@ -20,6 +21,7 @@
 </template>
 
 <script>
+import Margin from './Margin.vue'
 import numsecond4content from './contents/numsecond4content.vue'
 import Secondbox from './contents/second/Second.vue'
 import Thirdbox from './contents/second/Third.vue'
@@ -33,6 +35,7 @@ import Footerlink from './contents/FooterLink.vue'
 export default {
   name: 'ContentSecond',
   components: {
+    Margin,
     numsecond4content,
     Secondbox,
     Thirdbox,
