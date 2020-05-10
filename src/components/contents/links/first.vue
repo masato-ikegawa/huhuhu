@@ -1,11 +1,13 @@
 <template>
-  <li class="link-first">
-      <img 
-      src="../../../assets/slice/picutre_home.png"
-      class="link-first__img"
-      >
-      <span class="link-first__tag"># おはよう</span>
-  </li>
+  <router-link to='/content-1'>
+    <li class="link-first">
+        <img 
+        src="../../../assets/slice/picutre_home.png"
+        class="link-first__img"
+        >
+        <span class="link-first__tag"># おはよう</span>
+    </li>
+  </router-link>
 </template>
 
 <script>
@@ -44,6 +46,7 @@ export default {
   width: 95%;
 }
 .link-first__tag {
+  color: black;
   font-size: 14px;
 }
 </style>

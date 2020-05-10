@@ -1,11 +1,13 @@
 <template>
-  <li class="link-third">
-      <img 
-      src="../../../assets/slice/picutre_arima.png"
-      class="link-third__img"
-      >
-      <span class="link-third__tag"># みてい？</span>
-  </li>
+  <router-link to="content-3">
+    <li class="link-third">
+        <img 
+        src="../../../assets/slice/picutre_arima.png"
+        class="link-third__img"
+        >
+        <span class="link-third__tag"># おまいり</span>
+    </li>
+  </router-link>
 </template>
 
 <script>
@@ -44,6 +46,7 @@ export default {
   width: 95%;
 }
 .link-third__tag {
+  color: black;
   font-size: 14px;
 }
 </style>
