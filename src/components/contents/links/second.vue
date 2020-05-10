@@ -1,11 +1,13 @@
 <template>
-  <li class="link-second">
-      <img 
-      src="../../../assets/slice/picutre_iki.png"
-      class="link-second__img"
-      >
-      <span class="link-second__tag"># 行き電車</span>
-  </li>
+  <router-link to="content-2">
+    <li class="link-second">
+        <img 
+        src="../../../assets/slice/picutre_iki.png"
+        class="link-second__img"
+        >
+        <span class="link-second__tag"># おでかけ</span>
+    </li>
+  </router-link>
 </template>
 
 <script>
@@ -44,6 +46,7 @@ export default {
   width: 95%;
 }
 .link-second__tag {
+  color: black;
   font-size: 14px;
 }
 </style>

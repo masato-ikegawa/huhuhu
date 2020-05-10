@@ -1,11 +1,13 @@
 <template>
-  <li class="link-fourth">
-      <img 
-      src="../../../assets/slice/picutre_kaeri.png"
-      class="link-fourth__img"
-      >
-      <span class="link-fourth__tag"># みてい？</span>
-  </li>
+  <router-link to='content-4'>
+    <li class="link-fourth">
+        <img 
+        src="../../../assets/slice/picutre_kaeri.png"
+        class="link-fourth__img"
+        >
+        <span class="link-fourth__tag"># おんせん</span>
+    </li>
+  </router-link>
 </template>
 
 <script>
@@ -43,6 +45,7 @@ export default {
   width: 95%;
 }
 .link-fourth__tag {
+  color: black;
   font-size: 14px;
 }
 </style>
