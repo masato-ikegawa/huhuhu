@@ -1,7 +1,9 @@
 <template>
   <div class="content-first">
     <margin />
-    <div class="top-title">
+    <div 
+    class="top-title"
+    v-scroll="handleScroll">
       <numfirst4content />
       <img
       src="../assets/4index/oya_home.jpg"
@@ -57,6 +59,15 @@ export default {
   mounted () {
   },
   methods: {
+    handleScroll (evt, el) {
+        let top = el.getBoundingClientRect().top
+        let height = window.screen.height
+        let y = window.scrollY
+        if (height/9 < y + top) {
+            el.classList.add('active');
+      }
+      return window.scrollY > 100
+    }
   }
 }
 </script>

@@ -9,8 +9,11 @@ Vue.config.productionTip = false
 
 // スクロールのためのカスタムディレクティブ
 Vue.directive('scroll', {
+  // 紐づいている要素がdomに挿入される時
   inserted: function (el, binding) {
     let f = function (evt) {
+      // binding.valueにはhandleScroll (evt, el)が格納されてる
+      // つまりhandleScrollがtrueを返したらスクロール検知をしない
       if (binding.value(evt, el)) {
         window.removeEventListener('scroll', f)
       }
