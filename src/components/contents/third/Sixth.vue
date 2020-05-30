@@ -74,7 +74,7 @@ export default {
   position: relative;
 }
 .active {
-  animation: show 1s ease;
+  animation: show 5s ease;
 }
 .sixth-box__img {
   margin-right: 27.5px;

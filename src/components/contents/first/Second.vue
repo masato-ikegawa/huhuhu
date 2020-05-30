@@ -69,7 +69,7 @@ export default {
   margin-top: 70px;
 }
 .active {
-  animation: show 1s ease;
+  animation: show 5s ease;
 }
 .second-box__img {
   width: 80%;

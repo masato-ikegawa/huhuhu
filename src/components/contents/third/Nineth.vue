@@ -70,7 +70,7 @@ export default {
   position: relative;
 }
 .active {
-  animation: show 1s ease;
+  animation: show 5s ease;
 }
 .nineth-box__img {
   width: 70%;

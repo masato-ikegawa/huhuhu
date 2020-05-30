@@ -69,7 +69,7 @@ export default {
   animation: hide 1s ease;
 }
 .active {
-  animation: show 1s ease;
+  animation: show 5s ease;
 }
 .seventh-box__img {
   margin-left: 72px;
