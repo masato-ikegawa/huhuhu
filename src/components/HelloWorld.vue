@@ -3,10 +3,12 @@
     <div
     class="ld-anime"
     v-show="loading">
-      <p class="loading-msg">huhuhu?</p>
+      <p class="loading-msg">ほっ。</p>
     </div>
     <margin v-show="!loading" />
-    <ul v-show="!loading">
+    <ul 
+    v-show="!loading"
+    class="top_ul">
       <li
       class="top_ul-li"
       v-touch:start="Taphandler"
@@ -87,8 +89,8 @@ export default {
   },
   mounted () {
     this.startLoading()
-    // setTimeout(this.stopLoading, 13000);
-    setTimeout(this.stopLoading, 130);
+    setTimeout(this.stopLoading, 9000);
+    // setTimeout(this.stopLoading, 130);
   },
   methods: {
     startLoading () {
@@ -156,6 +158,25 @@ a {
         opacity: 1;
     }
 }
+@keyframes kakukaku{
+    0%{
+        opacity: 0;
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(45deg);
+    }
+    80%{
+      transform: rotateZ(-20deg);
+    }
+    95%{
+      transform: rotateZ(5deg);
+    }
+    100%{
+       opacity: 1;
+      transform: rotateZ(0deg);
+    }
+}
 @keyframes typing {
   0% {
     width: 0;
@@ -208,6 +229,9 @@ a {
         transform: translateX(-200px);
     }
 }
+.top_ul {
+  animation: show 4s linear 0s;
+}
 .margin {
   height: 30px;
 }
@@ -217,15 +241,12 @@ a {
   text-align: center;
 }
 .loading-msg{
-  border-right: 0.1em solid #000;
   letter-spacing: 10%;
   margin-left: 22%;
   margin-right: 22%;
   margin-top: 70%;
-  font-size: 14vw;
-   white-space: nowrap;
-    overflow: hidden;
-  animation: typing 10s steps(7, end), cursor 1.4s step-end infinite;
+  font-size: 28px;
+  animation: kakukaku 6s ease;
 }
 .top_ul-li{
   position: relative;

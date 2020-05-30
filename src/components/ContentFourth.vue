@@ -1,7 +1,10 @@
 <template>
   <div class="content-fourth">
-    <margin />
-    <div class="top-title">
+    <ldanime4content v-show="loading" />
+    <margin v-show="!loading" />
+    <div 
+    class="top-title"
+    v-show="!loading">
       <numfourth4content />
       <img
       src="../assets/4index/oya_kaeri.jpg"
@@ -9,16 +12,17 @@
       >
       <p class="top-title__tag"># おんせん</p>
     </div>
-    <icon4scroll />
-    <secondbox />
-    <thirdbox />
-    <fourthbox />
-    <fifthbox />
-    <footerlink />
+    <icon4scroll v-show="!loading" />
+    <secondbox v-show="!loading" />
+    <thirdbox v-show="!loading" />
+    <fourthbox v-show="!loading" />
+    <fifthbox v-show="!loading" />
+    <footerlink v-show="!loading" />
   </div>
 </template>
 
 <script>
+import Ldanime4content from './contents/Ldanime4content.vue'
 import Margin from './Margin.vue'
 import numfourth4content from './contents/numfourth4content.vue'
 import icon4scroll from './contents/icon4scroll.vue'
@@ -31,6 +35,7 @@ import Footerlink from './contents/FooterLink.vue'
 export default {
   name: 'Contentfourth',
   components: {
+    Ldanime4content,
     Margin,
     numfourth4content,
     icon4scroll,
@@ -46,8 +51,24 @@ export default {
     }
   },
   mounted () {
+    this.startLoading()
+    setTimeout(this.stopLoading, 4000);
+    // setTimeout(this.stopLoading, 130);
   },
   methods: {
+    startLoading () {
+      let elGn = document.getElementById('gn')
+      let elFooter = document.getElementById('stFooter')
+      elGn.style.display = 'none'
+      elFooter.style.display = 'none'
+    },
+    stopLoading () {
+      let elGn = document.getElementById('gn')
+      let elFooter = document.getElementById('stFooter')
+      elGn.style.display = 'block'
+      elFooter.style.display = 'block'
+      this.loading = false
+    }
   }
 }
 </script>
