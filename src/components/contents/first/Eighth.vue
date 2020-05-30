@@ -69,7 +69,7 @@ export default {
   animation: show 1s ease;
 }
 .eighth-box__img {
-  margin-right: 47px;
+  margin-right: 27.5px;
   width: 65%;
 }
 

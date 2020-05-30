@@ -7,7 +7,7 @@
       src="../assets/4index/oya_iki.jpg"
       class="top-title__img"
       >
-      <p class="top-title__tag"># いき電車</p>
+      <p class="top-title__tag"># おでかけ</p>
     </div>
     <secondbox />
     <thirdbox />
@@ -84,7 +84,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   right: 6%;
-  color: white;
+  color: black;
   position: absolute;
 }
 

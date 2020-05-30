@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="num-title">
-        #行き電車
+        #おでかけ
     </div>
   </div>
 </template>

@@ -7,7 +7,7 @@
       src="../assets/4index/oya_kaeri.jpg"
       class="top-title__img"
       >
-      <p class="top-title__tag"># わからん！</p>
+      <p class="top-title__tag"># おんせん</p>
     </div>
     <secondbox />
     <thirdbox />

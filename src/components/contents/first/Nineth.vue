@@ -2,7 +2,7 @@
   <div 
   class="nineth-box"
   v-scroll="handleScroll">
-    <p class="nineth-box__text">か<br>く<br>け<br>ん<br>ま<br>ち</p>
+    <p class="nineth-box__text">行ってきまーす</p>
   </div>
 </template>
 
@@ -58,7 +58,7 @@ export default {
 }
 .nineth-box {
   position:relative;
-  height: 300px;
+  height: 250px;
   opacity:0;
   animation: hide 1s ease;
 }
@@ -66,9 +66,12 @@ export default {
   animation: show 1s ease;
 }
 .nineth-box__text {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
   position: absolute;
-  top: 50px;
-  right: 175px;
+  top: 69px;
+  right: 160px;
+  font-weight: bold;
 }
 
 </style>

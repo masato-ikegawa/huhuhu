@@ -6,7 +6,7 @@
     src="../../../assets/house/ko_home3.jpg"
     class="fifth-box__img">
     <p class="fifth-box__text">
-      ゆ<br>っ<br>く<br>り<br>起<br>き<br>て<br>一<br>日<br>旅<br>に
+      準備完了、<br>今日は天気もいいな
     </p>
   </div>
 </template>
@@ -76,15 +76,16 @@ export default {
   animation: show 1s ease;
 }
 .fifth-box__img {
-  width: 70%;
+  width: 80%;
 }
 .fifth-box__text {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-align: -webkit-auto;
   position: absolute;
-  line-height: 1em;
-  position: absolute;
-  top: 1px;
-  right: 75px;
-  font-size: 13px;
+  top: 23px;
+  right: 40px;
+  font-size: 15px;
   color: white;
   font-weight: bold;
 }

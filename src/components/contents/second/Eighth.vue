@@ -6,6 +6,9 @@
       src="../../../assets/train_leftfome/ko_iki6.jpg"
       class="eighth-box__img"
       >
+      <p class="eighth-box__text">
+        有馬温泉到着〜
+      </p>
   </div>
 </template>
 
@@ -65,12 +68,24 @@ export default {
   animation: hide 1s ease;
   margin-top: 90px;
   margin-bottom:150px;
+  position: relative;
 }
 .active {
   animation: show 1s ease;
 }
 .eighth-box__img {
   width: 70%;
+}
+.eighth-box__text {
+  line-height: 1em;
+  position: absolute;
+  top: 177px;
+  left: 115px;
+  font-size: 15px;
+  color:white;
+  font-weight: bold;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
 }
 
 </style>

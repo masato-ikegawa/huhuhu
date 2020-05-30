@@ -72,7 +72,7 @@ export default {
   animation: show 1s ease;
 }
 .seventh-box__img {
-  margin-left: 57px;
+  margin-left: 72px;
   width: 65%;
 }
 

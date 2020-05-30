@@ -71,6 +71,6 @@ export default {
   animation: show 1s ease;
 }
 .fourth-box__img {
-  width: 70%;
+  width: 80%;
 }
 </style>
