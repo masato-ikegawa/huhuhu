@@ -3,11 +3,11 @@
     <div 
     class="num-main">
       <div class="num-index">
-          <img src="../../assets/slice/number_04.svg" alt="">
+          <img src="../../assets/slice/ko_number_04.svg" alt="">
       </div>
-      <div class="num-time">
+      <!-- <div class="num-time">
           17:50
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
