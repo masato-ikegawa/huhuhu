@@ -67,7 +67,7 @@ export default {
   text-align: right;
 }
 .active {
-  animation: show 1s ease;
+  animation: show 5s ease;
 }
 .third-box__img {
   width: 75%;

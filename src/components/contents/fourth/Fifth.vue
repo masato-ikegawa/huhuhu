@@ -65,7 +65,7 @@ export default {
   margin-bottom: 150px;
 }
 .active {
-  animation: show 1s ease;
+  animation: show 5s ease;
 }
 .fifth-box__img {
   width: 80%;

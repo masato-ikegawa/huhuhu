@@ -9,6 +9,7 @@
       >
       <p class="top-title__tag"># おでかけ</p>
     </div>
+    <icon4scroll />
     <secondbox />
     <thirdbox />
     <fourthbox />
@@ -23,6 +24,7 @@
 <script>
 import Margin from './Margin.vue'
 import numsecond4content from './contents/numsecond4content.vue'
+import icon4scroll from './contents/icon4scroll.vue'
 import Secondbox from './contents/second/Second.vue'
 import Thirdbox from './contents/second/Third.vue'
 import Fourthbox from './contents/second/Fourth.vue'
@@ -37,6 +39,7 @@ export default {
   components: {
     Margin,
     numsecond4content,
+    icon4scroll,
     Secondbox,
     Thirdbox,
     Fourthbox,
