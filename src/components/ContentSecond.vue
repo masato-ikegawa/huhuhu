@@ -1,7 +1,10 @@
 <template>
   <div class="content-second">
-    <margin />
-    <div class="top-title">
+    <ldanime4content v-show="loading" />
+    <margin v-show="!loading" />
+    <div 
+    class="top-title"
+    v-show="!loading">
       <numsecond4content />
       <img
       src="../assets/4index/oya_iki.jpg"
@@ -9,19 +12,20 @@
       >
       <p class="top-title__tag"># おでかけ</p>
     </div>
-    <icon4scroll />
-    <secondbox />
-    <thirdbox />
-    <fourthbox />
-    <fifthbox />
-    <sixthbox />
-    <seventhbox />
-    <eighthbox />
-    <footerlink />
+    <icon4scroll v-show="!loading" />
+    <secondbox v-show="!loading" />
+    <thirdbox v-show="!loading" />
+    <fourthbox v-show="!loading" />
+    <fifthbox v-show="!loading" />
+    <sixthbox v-show="!loading" />
+    <seventhbox v-show="!loading" />
+    <eighthbox v-show="!loading" />
+    <footerlink v-show="!loading" />
   </div>
 </template>
 
 <script>
+import Ldanime4content from './contents/Ldanime4content.vue'
 import Margin from './Margin.vue'
 import numsecond4content from './contents/numsecond4content.vue'
 import icon4scroll from './contents/icon4scroll.vue'
@@ -37,6 +41,7 @@ import Footerlink from './contents/FooterLink.vue'
 export default {
   name: 'ContentSecond',
   components: {
+    Ldanime4content,
     Margin,
     numsecond4content,
     icon4scroll,
@@ -55,8 +60,24 @@ export default {
     }
   },
   mounted () {
+    this.startLoading()
+    setTimeout(this.stopLoading, 4000);
+    // setTimeout(this.stopLoading, 130);
   },
   methods: {
+    startLoading () {
+      let elGn = document.getElementById('gn')
+      let elFooter = document.getElementById('stFooter')
+      elGn.style.display = 'none'
+      elFooter.style.display = 'none'
+    },
+    stopLoading () {
+      let elGn = document.getElementById('gn')
+      let elFooter = document.getElementById('stFooter')
+      elGn.style.display = 'block'
+      elFooter.style.display = 'block'
+      this.loading = false
+    }
   }
 }
 </script>
