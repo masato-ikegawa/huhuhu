@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="num-title">
-        #帰るぜ
+        #おんせん
     </div>
   </div>
 </template>

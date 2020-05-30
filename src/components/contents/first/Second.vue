@@ -72,6 +72,6 @@ export default {
   animation: show 1s ease;
 }
 .second-box__img {
-  width: 70%;
+  width: 80%;
 }
 </style>

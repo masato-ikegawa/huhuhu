@@ -7,8 +7,8 @@
       class="seventh-box__img"
       >
       <p class="seventh-box__text">
-      ガ<br>タ<br>ン<br>ゴ<br>ト<br>ン
-    </p>
+        ガ<br>タ<br>ン<br>ゴ<br>ト<br>ン
+      </p>
   </div>
 </template>
 
@@ -74,7 +74,7 @@ export default {
   animation: show 1s ease;
 }
 .seventh-box__img {
-  margin-right: 37.5px;
+  margin-right: 39px;
   width: 65%;
 }
 .seventh-box__text {

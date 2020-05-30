@@ -71,7 +71,7 @@ export default {
   animation: show 1s ease;
 }
 .sixth-box__img {
-  margin-left: 47px;
+  margin-left: 27.5px;
   width: 65%;
 }
 </style>

@@ -2,7 +2,7 @@
   <div 
   class="third-box"
   v-scroll="handleScroll">
-    <p class="third-box__text">か<br>く<br>け<br>ん<br>ま<br>ち</p>
+    <p class="third-box__text">普通電車でまったり行こう</p>
   </div>
 </template>
 
@@ -66,8 +66,11 @@ export default {
   animation: show 1s ease;
 }
 .third-box__text {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
   position: absolute;
   top: 70px;
-  left: 183px;
+  left: 159px;
+  font-weight: bold;
 }
 </style>
