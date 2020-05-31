@@ -3,7 +3,7 @@
     class="ld-anime"
     v-show="loading">
       <img 
-      src="../../assets/slice/picutre_home.png" 
+      src="../../assets/slice/rocket.png" 
       class="ld-anime__img"
       alt="">
     </div>
