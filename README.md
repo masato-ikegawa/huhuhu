@@ -1,4 +1,7 @@
 # project
+https://huhuhu-8c954.web.app/
+現在は運営を担当していません。
+スマホでの閲覧を推奨します。
 
 ## Project setup
 ```
